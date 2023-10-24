@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -113,6 +114,18 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             keyboardType: TextInputType.text,
                             obscureText: true,
+                          ),
+                          Padding(
+                              padding: EdgeInsets.only(top: 40.0)
+                          ),
+                          MaterialButton(
+                            height: 50.0,
+                            minWidth: 70.0,
+                            color: Colors.cyanAccent,
+                            textColor: Colors.redAccent,
+                            child: Icon(FontAwesomeIcons.rightToBracket),
+                            onPressed: () => {},
+                            splashColor: Colors.black87,
                           )
                         ],
                       ),
