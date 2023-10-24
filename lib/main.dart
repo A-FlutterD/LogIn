@@ -25,47 +25,9 @@ class LoginPage extends StatefulWidget {
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
-/*
-class _LoginPageState extends State<LoginPage> {
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.green,
-      body: Stack(
-        fit: StackFit.expand,
-        children: <Widget>[
-          Image(
-            image: AssetImage("lib/assets/goat.jpeg"),
-            fit: BoxFit.cover,
-            color: Colors.black87,
-            colorBlendMode: BlendMode.darken,
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              FlutterLogo(
-                size: 150.00,
-              ),
-              Form(
-                  child: Column(
-                    children: <Widget>[
-                      TextFormField(
-                        decoration: InputDecoration(
-                          hintText: "Enter E-mail"
-                        ),
-                        keyboardType: TextInputType.emailAddress,
-                      )
-                    ],
-                  )
-              )
-            ],
-          )
-        ],
-      ),
-    );
-  }
-}
-*/
+
+
+
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
@@ -115,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                             keyboardType: TextInputType.text,
                             obscureText: true,
                           ),
-                          Padding(
+                          const Padding(
                               padding: EdgeInsets.only(top: 40.0)
                           ),
                           MaterialButton(
@@ -123,9 +85,9 @@ class _LoginPageState extends State<LoginPage> {
                             minWidth: 70.0,
                             color: Colors.cyanAccent,
                             textColor: Colors.redAccent,
-                            child: Icon(FontAwesomeIcons.rightToBracket),
                             onPressed: () => {},
                             splashColor: Colors.black87,
+                            child: const Icon(FontAwesomeIcons.rightToBracket),
                           )
                         ],
                       ),
